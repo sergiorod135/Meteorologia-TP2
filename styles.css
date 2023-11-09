@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.weather-column,
+.transport-column {
+  flex: 1;
+  overflow: hidden;
+}
+
+.weather-column {
+  background-image: url('tiempo1.jpg');
+  background-size: cover;
+  background-position: left;
+}
+
+.transport-column {
+  background-image: url('transporte1.jpg');
+  background-size: cover;
+  background-position: right;
+}
+
+.weather-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.thermometer-container {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.thermometer {
+  width: 30px;
+  height: 200px;
+  background: linear-gradient(to top, #00f, #f00);
+  border-radius: 15px;
+  position: relative;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.temperature-marker {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.temperature-scale {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.temperature-scale-item {
+  margin: 5px 0;
+  color: white;
+}
+
+
+
+.transport-title {
+  color: white;
+  text-align: center;
+}
+
+.bus-schedule,
+.train-schedule {
+  color: white;
+  display: inline-block; /* Alinea los horarios en línea */
+}
+
+/* Agrega el gradiente de color */
+#colorGradient {
+  stop-color: #00f;
+  stop-opacity: 1;
+}
+
+#colorGradient {
+  stop-color: #ff8c00;
+  stop-opacity: 1;
+}
+.pressure-container {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Dirección del Viento */
+.wind-direction-container {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Humedad */
+.humidity-container {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.label {
+  color: white;
+  font-size: 18px;
+}
+
+.measurement-value {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
